@@ -31,17 +31,17 @@
 </head>
 <body>
 
-    <header>
+    <header class="scroll">
     <nav id="nav">
   <div id="logo">
     <h1 id="header-title"> <a href="español.html">Stanimir Todorov</a></h1>
   </div>
       <div class="menu">
         <a class="menu-items" href="#acerca">Inicio</a>
-        <a class="menu-items works" href="#trabajos">Trabajos</a>
-        <a class="menu-items" href="#festivales">Festivales</a>
-        <a class="menu-items" href="#premios">Premios</a>
-        <a class="menu-items" href="#contacto">Contácto</a>
+        <a id="menuBug" class="menu-items works" href="#trabajos">Trabajos</a>
+        <a id="menuBugF" class="menu-items"  href="#festivales">Festivales</a>
+        <a id="menuBugP" class="menu-items" href="#premios">Premios</a>
+        <a id="menuBugC" class="menu-items" href="#contacto">Contácto</a>
       </div>
   <div class="hamburger">
     <img id="menu-btn" src="https://img.icons8.com/ios-glyphs/30/ffffff/menu--v1.png"/>
@@ -49,10 +49,11 @@
   </nav>
     </header>
 
-    <article id="acerca" class="about">
+    <article id="acerca" class="about scroll-about">
       <section class="aboutContainer">
         <img class="imgAbout" src="./imagenes/staniJoven.jpg" alt="Stanimir Todorov Joven">
         <h3 class="Title">Acerca de mi</h3>
+        <div class="underline"></div>
         <p class="P">
           Nací en <b><i>Sofia, Bulgaria</i></b> en 1967.
            Comencé a estudiar cello en la Escuela Nacional de Música y desde 1988 a 1991 fuí alumno del profesor Zdravko Jordanov en la Academia Estatal de Música. <br>
@@ -63,12 +64,13 @@
     </article>
 
     <div class="videoContainer">
-      <iframe class="video" src="https://www.youtube.com/embed/JWvykfpgQLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe id="trabajos" class="video" src="https://www.youtube.com/embed/JWvykfpgQLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-    <article id="trabajos" class="works">
+    <article class="works">
       <section class="worksContainer">
         <h3 class="Title">Trabajos</h3>
+        <div class="underline"></div>
         <p class="P">
           Fuí profesor en el Conservatorio Real de Música de <b><i>Copenhague, Dinamarca</i></b> del Conservatorio Musical de <b><i>Malmö, Suecia</i></b> y de la IMMA (Suiza).
            En 1994 fuí premiado en la competencia Internacional Rostropovich en París, donde obtuve un premio a la mejor interpretación de una obra de Alfred Schnittke.
@@ -79,9 +81,11 @@
       </section>
     </article>
 
-    <article id="festivales" class="festivals">
+    <article class="festivals scroll-festivals">
       <section class="festivalsContainer">
-        <h3 class="Title">Festivales</h3>
+        <h3 id="festivales" class="Title">Festivales</h3>
+        <div class="underlineW"></div>
+        <div class="res">
           <img class="festivalsImg" src="./imagenes/celloslide.jpg" alt="Stanimir Todorov cellista violoncello">
           <ul class="list">
             <li class="listComponent pFont"> <a target="_BLANK" href="https://www.myswitzerland.com/es/descubrir-suiza/eventos/65th-menuhin-festival-gstaad-academy-1/">Menuhin Festival, Suiza</a> </li>
@@ -92,15 +96,17 @@
             <li class="listComponent pFont"><a target="_BLANK" href="https://arqa.com/en/architecture/g-w-annenberg-performing-arts-centre.html">Annenberg Festival, Dinamarca</a></li>
             <li class="listComponent pFont"><a target="_BLANK" href="https://www.viagogo.com/ww/Concert-Tickets/Clubs-and-Dance/Apollonia-Tickets?AffiliateID=49&adposition=&PCID=PSROWGOOCONAPOLLDBBAE7496&AdID=517974635213&MetroRegionID=&psc=%2c&ps=%2c&ps_p=0&ps_c=12889749962&ps_ag=121085932506&ps_tg=kwd-307417750551&ps_ad=517974635213&ps_adp=%2c&ps_fi=%2c&ps_li=2100&ps_lp=1000073&ps_n=g&ps_d=c&gclid=CjwKCAjw1JeJBhB9EiwAV612y09_3QfcJsAujJx6yTL4scKejJlQuURuWVBKiAm9mIo4HtmbxV7SURoCufMQAvD_BwE">Apollonia Festival, Bulgaria</a></li>
           </ul>
-          
+        </div>
       </section>
     </article>
 
-    <article id="premios" class="awards">
+    <article id="premios" class="awards scroll-awards">
       <section class="awardsContainer">
         <h3 class="Title">Premios</h3>
+        <div class="underline"></div>
+        <div class="res2">
           <img class="awardsImg" src="./imagenes/celloslide.jpg" alt="Stanimir Todorov cellista violoncello">
-          <ul class="list">
+          <ul class="list listRes">
             <li class="listComponent pFont">1999 Premio Lira de cristal</li>
             <li class="listComponent pFont">Mención Konex 2019</li>
             <li class="listComponent pFont">Premio</li>
@@ -109,7 +115,7 @@
             <li class="listComponent pFont">Premio</li>
             <li class="listComponent pFont">Premio</li>
           </ul>
-          
+        </div>
       </section>
     </article>
 
@@ -117,6 +123,7 @@
 
           <form id="form" class="form" action="">
               <h3 class="formTitle">Contacto</h3>
+              <div class="underlineW"></div>
               <input name="name" required type="text" id="name" placeholder="Nombre completo">
               <input type="email" name="email" id="email" required placeholder="Correo electrónico">
               <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
@@ -127,11 +134,15 @@
         <a class="icon spotify" target="_BLANK" href="https://open.spotify.com/artist/7hYgqXHC4a8VT1JxTuD10O"><i class="fab fa-spotify"></i></a>
         <a class="icon instagram" target="_BLANK" href="https://www.instagram.com/stanimir8075/"><i class="fab fa-instagram"></i></a>
       </div>
+      <a id="passInfo" href="mailto:mtdrvdeveloper@gmail.com">i</a>
       </footer>
 
 <script src="typed.js"></script>
 <script src="navbar.js"></script>
+<script src="form.js"></script>
 <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>   
 <script src="https://kit.fontawesome.com/b37838c194.js" crossorigin="anonymous"></script> 
+<script src="/scrollreveal.js"></script>
+<script src="/index.js"></script>
 </body>
 </html>

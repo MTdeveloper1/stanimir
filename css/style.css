@@ -1,225 +1,287 @@
-@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
 html {
-    width: 100%;
-    overflow-x: hidden;
-    box-sizing: border-box;
-    font-family: 'Playfair Display', serif;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
 }
+
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+}
+.underline {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  height: 1.5px;
+  width: 20%;
+}
+.underlineW {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(255, 255, 255);
+  height: 1.5px;
+  width: 20%;
 }
 .titleFont {
-    font-family: 'Spectral SC', serif;
+  font-family: "Spectral SC", serif;
 }
 .pFont {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
-    height: 80px;
-    width: 100%;
-     box-shadow: 0 0 6px rgba(0, 0, 0, 0.5); 
-    font-family: 'Spectral SC', serif;
-    background-color: rgb(27, 27, 27);
-    color: white;
-    position: fixed;
+  height: 80px;
+  width: 100%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  font-family: "Spectral SC", serif;
+  background-color: #1B1B1B;
+  color: white;
+  position: fixed;
+  z-index: 1;
 }
 #nav {
-    height: 70px;
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  height: 70px;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 #nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: 300px;
-    margin-right: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: 300px;
+  margin-right: 10px;
 }
 .hamburger {
-    height: 100%;
-    width: 70px;
-    text-align: center;
-    cursor: pointer;
+  height: 100%;
+  width: 70px;
+  text-align: center;
+  cursor: pointer;
 }
-.hamburger img{
-    vertical-align: top;
-    padding: 23px;
+.hamburger img {
+  vertical-align: top;
+  padding: 23px;
 }
 .menu {
-    width: 100%;
-    position: fixed;
-    background-color: rgb(56, 56, 56);
-    left: 0;
-    top: 70px;
-    height: 100vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    transform: translateX(200%);
-    z-index: 10;
-    transition: .5s;
+  width: 100%;
+  position: fixed;
+  background-color: rgb(56, 56, 56);
+  left: 0;
+  top: 70px;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  transform: translateX(200%);
+  z-index: 10;
+  transition: 0.5s;
 }
 .show {
-    transform: translateX(0%) ;
-    transition: .5s;
+  transform: translateX(0%);
+  transition: 0.5s;
 }
-.aboutContainer, .worksContainer, .festivalsContainer, .awardsContainer {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+.aboutContainer,
+.worksContainer,
+.festivalsContainer,
+.awardsContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 }
 .imgAbout {
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25%;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25%;
 }
 .Title {
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 40px;
-    margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
+  margin-top: 10px;
 }
 .P {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    margin: 10px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  margin: 10px;
 }
 .videoContainer {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    margin-top: 20px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 20px;
 }
+
 .video {
-    width: 80%;
-    height: 30vh;
+  width: 80%;
+  height: 30vh;
 }
 .festivalsContainer {
-    background-color: black;
-    color: white;
-    padding-bottom: 20px;
+  background-color: black;
+  color: white;
+  padding-bottom: 20px;
 }
 .festivals {
-    box-shadow: 1px 1px 10px black;
+  box-shadow: 1px 1px 10px black;
 }
 .list {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .listComponent {
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .listComponent a {
-    color: white;
+  color: white;
 }
 .festivalsImg {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
 }
 .awardsImg {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
 }
 .awardsContainer {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 footer {
-    background-color: rgb(27, 27, 27);
-    padding-bottom: 10px;
+  background-color: rgb(27, 27, 27);
+  padding-bottom: 10px;
 }
 textarea {
-    overflow: scroll;
-    resize: none;
-    margin-right: auto;
-    margin-left: auto;
-    width: 300px;
-    height: 100px;
-    border: none;
-    background-color: rgb(51, 51, 51);
-    color: white;
+  overflow: scroll;
+  resize: none;
+  margin-right: auto;
+  margin-left: auto;
+  width: 300px;
+  height: 100px;
+  border: none;
+  background-color: rgb(51, 51, 51);
+  color: white;
 }
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .formTitle {
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 25px;
 }
-#name, #email {
-    margin-top: 5px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 300px;
-    border: none;
-    background-color: rgb(51, 51, 51);
-    color: white;
-    padding-top: 5px;
-    padding-bottom: 5px;
+#name,
+#email {
+  margin-top: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 300px;
+  border: none;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 #email {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 .submitBtn {
-    margin-left: auto;
-    margin-right: auto;
-    width: 120px;
-    margin-top: 10px;
-    border-radius: 20px;
-    padding: 10px;
-    border: none;
-    background-color: white;
-    margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+  margin-top: 10px;
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  margin-bottom: 10px;
 }
 .socialContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .icon {
-    color: white;
-    font-size: 20px;
+  color: white;
+  font-size: 20px;
 }
 
 .spotify {
-    margin-left: 20px;
-    margin-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-
+#passInfo {
+  opacity: 0;
+}
 @media (min-width: 820px) {
-    header {
-        position: fixed;
-    }
-    .imgAbout {
-        margin-top: 15vh;
-    }
-    .menu {
-        width: 30%;
-        transform: translateX(235%);
-    }
-    .show {
-        transform: translateX(-235%) ;
-    }
+  header {
+    position: fixed;
   }
+  .imgAbout {
+    margin-top: 15vh;
+  }
+  .menu {
+    width: 30%;
+    transform: translateX(335%);
+  }
+  .show {
+    transform: translateX(235%);
+  }
+  .video {
+    height: 400px;
+  }
+  .aboutContainer,
+  .worksContainer {
+    width: 75%;
+    margin-bottom: 50px;
+  }
+  .worksContainer {
+    margin-top: 50px;
+  }
+  .res {
+    display: flex;
+    flex-direction: row;
+  }
+  .festivalsImg {
+    width: 40%;
+    margin-left: 10%;
+    padding: 2.5%;
+  }
+  .list {
+    margin-right: 15%;
+    margin-top: 7%;
+  }
+  .res2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .awardsImg {
+    width: 40%;
+    margin-right: 10%;
+    padding: 2.5%;
+  }
+  .listRes {
+    margin-left: 15%;
+    margin-top: 7%;
+  }
+}
