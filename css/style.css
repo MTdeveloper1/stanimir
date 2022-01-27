@@ -151,15 +151,13 @@ header {
 }
 .festivalsImg {
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10%;
   margin-top: 15px;
 }
 .awardsImg {
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 15px;
+  margin-left: 10%;
 }
 .awardsContainer {
   padding-bottom: 20px;
@@ -245,7 +243,7 @@ form {
     transform: translateX(335%);
   }
   .show {
-    transform: translateX(235%);
+    transform: translateX(335%);
   }
   .video {
     height: 400px;

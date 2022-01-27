@@ -1,12 +1,11 @@
-const form = document.querySelector("#form");
-const btnMailto = document.querySelector("#passInfo");
+const $form = document.querySelector('#form')
+    const $buttonMailto = document.querySelector('#passInfo')
 
-form.addEventListener("submit", handleSubmit);
-function handleSubmit(event) {
-  event.preventDefault();
-  const formulario = new FormData(this);
-  console.log(formulario.get("name"));
+    $form.addEventListener('submit', handleSubmit)
 
-  btnMailto.setAttribute('href', `malito:mtdrvdeveloper@gmail.com?subject=${formulario.get('name')}${formulario.get('email')}&body=${formulario.get('message')}`)
-    btnMailto.click()
-}
+    function handleSubmit(event) {
+      event.preventDefault()
+      const form = new FormData(this)
+      $buttonMailto.setAttribute('href', `mailto:mtdrvdeveloper@gmail.com?subject=nombre ${form.get('name')}  correo ${form.get('email')}&body=${form.get('message')}`)
+      $buttonMailto.click()
+    }
